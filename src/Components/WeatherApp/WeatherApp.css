@@ -5,6 +5,9 @@
     margin-top: 10px;
     border-radius: 12px;
     background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+    @media (max-width: 768px) {
+        padding: 20px; /* Add padding for smaller screens */
+    }
 }
 .top-bar{
     display: flex;
@@ -81,3 +84,105 @@
 
 
 
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 500px; /* Limit maximum width for larger screens */
+        height: auto; /* Adjust height automatically */
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 12px;
+        background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+        padding: 20px; /* Add padding to the container */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+    
+    .top-bar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    
+    .top-bar input {
+        flex: 1; /* Take remaining space */
+        height: 60px;
+        background: #ebfffc;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        padding-left: 40px;
+        color: #626262;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .search-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; /* Make it a circle */
+        cursor: pointer; 
+        background-color: #ebfffc;
+    }
+    
+    .weather-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .weather-temp,
+    .weather-location {
+        text-align: center; /* Center text */
+    }
+    
+    .data-container {
+        display: flex;
+        justify-content: space-around; /* Distribute elements evenly */
+        margin-top: 30px;
+    }
+    
+    .element {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        gap: 5px; /* Add vertical gap between elements */
+    }
+    
+    .icon {
+        width: 40px; /* Adjust icon size */
+    }
+    
+    .data {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }    
+}
+
+@media (max-width: 768px) {
+    .top-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-bar input{
+        width: auto;
+    }
+    .search-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 40px;
+    }
+    .data-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .data{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
