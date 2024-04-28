@@ -91,7 +91,7 @@
         height: auto; /* Adjust height automatically */
         margin: auto;
         margin-top: 10px;
-        border-radius: 12px;
+        border-radius: 20px;
         background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
         padding: 20px; /* Add padding to the container */
         box-sizing: border-box; /* Include padding in the width calculation */
@@ -163,15 +163,20 @@
 
 @media (max-width: 768px) {
     .top-bar{
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
+    }
+    .container{
+        margin: 0 auto;
+        margin-top: 50px;
+        height: 100%;
     }
     .top-bar input{
         width: auto;
     }
     .search-icon{
-        width: 30px;
-        height: 30px;
+        width: 55px;
+        height: 55px;
         border-radius: 40px;
     }
     .data-container{
