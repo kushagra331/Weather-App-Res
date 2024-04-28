@@ -172,7 +172,7 @@
         height: 100%;
     }
     .top-bar input{
-        width: auto;
+        width: 30px;
     }
     .search-icon{
         width: 55px;
